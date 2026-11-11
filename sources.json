@@ -1,0 +1,484 @@
+{
+  "sources": [
+    {
+      "repo": "https://github.com/DietrichGebert/ponytail",
+      "commit": "96608e078b2d5ea607c5c3b8b5a54d1c1fba6846",
+      "attribution": "DietrichGebert",
+      "license": "licenses/ponytail.txt",
+      "entries": [
+        {
+          "path": ".openclaw/skills/ponytail-audit/SKILL.md",
+          "disposition": "upstream-harness-copy",
+          "canonical": "skills/ponytail-audit/SKILL.md",
+          "note": "Duplicate upstream OpenClaw packaging; canonical entry is mapped."
+        },
+        {
+          "path": ".openclaw/skills/ponytail-debt/SKILL.md",
+          "disposition": "upstream-harness-copy",
+          "canonical": "skills/ponytail-debt/SKILL.md",
+          "note": "Duplicate upstream OpenClaw packaging; canonical entry is mapped."
+        },
+        {
+          "path": ".openclaw/skills/ponytail-gain/SKILL.md",
+          "disposition": "upstream-harness-copy",
+          "canonical": "skills/ponytail-gain/SKILL.md",
+          "note": "Duplicate upstream OpenClaw packaging; canonical entry is mapped."
+        },
+        {
+          "path": ".openclaw/skills/ponytail-help/SKILL.md",
+          "disposition": "upstream-harness-copy",
+          "canonical": "skills/ponytail-help/SKILL.md",
+          "note": "Duplicate upstream OpenClaw packaging; canonical entry is mapped."
+        },
+        {
+          "path": ".openclaw/skills/ponytail-review/SKILL.md",
+          "disposition": "upstream-harness-copy",
+          "canonical": "skills/ponytail-review/SKILL.md",
+          "note": "Duplicate upstream OpenClaw packaging; canonical entry is mapped."
+        },
+        {
+          "path": ".openclaw/skills/ponytail/SKILL.md",
+          "disposition": "upstream-harness-copy",
+          "canonical": "skills/ponytail/SKILL.md",
+          "note": "Duplicate upstream OpenClaw packaging; canonical entry is mapped."
+        },
+        {
+          "path": "skills/ponytail-audit/SKILL.md",
+          "disposition": "adapted",
+          "skill": "review-change"
+        },
+        {
+          "path": "skills/ponytail-debt/SKILL.md",
+          "disposition": "adapted",
+          "skill": "shortcut-ledger"
+        },
+        {
+          "path": "skills/ponytail-gain/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Upstream benchmark scoreboard, not measurements for this collection; benchmark method distilled in benchmark-performance."
+        },
+        {
+          "path": "skills/ponytail-help/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Upstream mode/help card and plugin configuration; collection quick start is in README."
+        },
+        {
+          "path": "skills/ponytail-review/SKILL.md",
+          "disposition": "adapted",
+          "skill": "review-change"
+        },
+        {
+          "path": "skills/ponytail/SKILL.md",
+          "disposition": "adapted",
+          "skill": "lean-change"
+        }
+      ]
+    },
+    {
+      "repo": "https://github.com/q-qp-p/pstack",
+      "commit": "a6342ded43a2437e3c664b46c2cff103787773fd",
+      "attribution": "Lauren Tan / Poteto; standalone mirror",
+      "license": "licenses/pstack.txt",
+      "entries": [
+        {
+          "path": "automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "triage-issue",
+          "note": "Manual local reproduction and fix evidence are included; Benny automation is independent."
+        },
+        {
+          "path": "automations/benny/skills/setup-benny/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Cursor automation install and Slack/tracker/app-control configuration remain independent."
+        },
+        {
+          "path": "automations/benny/skills/triage-issue-reports/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "triage-issue",
+          "note": "Manual evidence triage is included; Slack automation and tracker mutations remain independent."
+        },
+        {
+          "path": "skills/architect/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/arena/SKILL.md",
+          "disposition": "adapted",
+          "skill": "parallel-work"
+        },
+        {
+          "path": "skills/automate-me/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow"
+        },
+        {
+          "path": "skills/benchmark-checklist/SKILL.md",
+          "disposition": "adapted",
+          "skill": "benchmark-performance"
+        },
+        {
+          "path": "skills/blast-radius/SKILL.md",
+          "disposition": "adapted",
+          "skill": "review-change"
+        },
+        {
+          "path": "skills/bro/SKILL.md",
+          "disposition": "adapted",
+          "skill": "write-technical-docs"
+        },
+        {
+          "path": "skills/correct/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow"
+        },
+        {
+          "path": "skills/create-formal-verification-skill/SKILL.md",
+          "disposition": "adapted",
+          "skill": "formal-verification"
+        },
+        {
+          "path": "skills/create-verification-skill/SKILL.md",
+          "disposition": "adapted",
+          "skill": "verify-behavior"
+        },
+        {
+          "path": "skills/figure-it-out/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/how/SKILL.md",
+          "disposition": "adapted",
+          "skill": "trace-code"
+        },
+        {
+          "path": "skills/in-your-own-words/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/interrogate/SKILL.md",
+          "disposition": "adapted",
+          "skill": "review-change"
+        },
+        {
+          "path": "skills/ketchup-video/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "task-handoff",
+          "note": "Handoff and decision summary are included; video production remains upstream."
+        },
+        {
+          "path": "skills/ketchup/SKILL.md",
+          "disposition": "adapted",
+          "skill": "task-handoff"
+        },
+        {
+          "path": "skills/maintain-formal-verification-skill/SKILL.md",
+          "disposition": "adapted",
+          "skill": "formal-verification"
+        },
+        {
+          "path": "skills/maintain-verification-skill/SKILL.md",
+          "disposition": "adapted",
+          "skill": "verify-behavior"
+        },
+        {
+          "path": "skills/make-bot-ui/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Cursor routines, a webhook, hosting and tailnet wiring need a separate deployment."
+        },
+        {
+          "path": "skills/no-comments/SKILL.md",
+          "disposition": "adapted",
+          "skill": "review-change"
+        },
+        {
+          "path": "skills/poteto-help/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Upstream catalog; this collection has its own README."
+        },
+        {
+          "path": "skills/poteto-mode/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Upstream router, provider setup and autonomous playbooks stay upstream; lean, design, verification, handoff and parallel skills capture portable guidance."
+        },
+        {
+          "path": "skills/principle-attack-the-premise/SKILL.md",
+          "disposition": "adapted",
+          "skill": "trace-code"
+        },
+        {
+          "path": "skills/principle-boundary-discipline/SKILL.md",
+          "disposition": "adapted",
+          "skill": "typescript-boundaries"
+        },
+        {
+          "path": "skills/principle-build-the-lever/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow"
+        },
+        {
+          "path": "skills/principle-encode-lessons-in-structure/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow"
+        },
+        {
+          "path": "skills/principle-exhaust-the-design-space/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-experience-first/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-explain-the-number/SKILL.md",
+          "disposition": "adapted",
+          "skill": "benchmark-performance"
+        },
+        {
+          "path": "skills/principle-fix-root-causes/SKILL.md",
+          "disposition": "adapted",
+          "skill": "trace-code"
+        },
+        {
+          "path": "skills/principle-foundational-thinking/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-guard-the-context-window/SKILL.md",
+          "disposition": "adapted",
+          "skill": "task-handoff"
+        },
+        {
+          "path": "skills/principle-laziness-protocol/SKILL.md",
+          "disposition": "adapted",
+          "skill": "lean-change"
+        },
+        {
+          "path": "skills/principle-make-operations-idempotent/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-minimize-reader-load/SKILL.md",
+          "disposition": "adapted",
+          "skill": "write-technical-docs"
+        },
+        {
+          "path": "skills/principle-model-the-domain/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-never-block-on-the-human/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow"
+        },
+        {
+          "path": "skills/principle-outcome-oriented-execution/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-prove-it-works/SKILL.md",
+          "disposition": "adapted",
+          "skill": "verify-behavior"
+        },
+        {
+          "path": "skills/principle-redesign-from-first-principles/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-separate-before-serializing-shared-state/SKILL.md",
+          "disposition": "adapted",
+          "skill": "parallel-work"
+        },
+        {
+          "path": "skills/principle-sequence-verifiable-units/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/principle-subtract-before-you-add/SKILL.md",
+          "disposition": "adapted",
+          "skill": "lean-change"
+        },
+        {
+          "path": "skills/principle-test-behavior-not-implementation/SKILL.md",
+          "disposition": "adapted",
+          "skill": "verify-behavior"
+        },
+        {
+          "path": "skills/principle-type-system-discipline/SKILL.md",
+          "disposition": "adapted",
+          "skill": "typescript-boundaries"
+        },
+        {
+          "path": "skills/recall/SKILL.md",
+          "disposition": "adapted",
+          "skill": "task-handoff"
+        },
+        {
+          "path": "skills/reflect/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow"
+        },
+        {
+          "path": "skills/setup-pstack/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Harness and provider configuration is independent."
+        },
+        {
+          "path": "skills/sharpen/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change"
+        },
+        {
+          "path": "skills/show-me-your-work/SKILL.md",
+          "disposition": "adapted",
+          "skill": "task-handoff"
+        },
+        {
+          "path": "skills/statechart/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "formal-verification",
+          "note": "Modeling workflow is included; TypeScript runner, TLC/Java bootstrap, fixtures, and Pele rendering remain upstream."
+        },
+        {
+          "path": "skills/swarm/SKILL.md",
+          "disposition": "adapted",
+          "skill": "parallel-work"
+        },
+        {
+          "path": "skills/tdd/SKILL.md",
+          "disposition": "adapted",
+          "skill": "verify-behavior"
+        },
+        {
+          "path": "skills/teach/SKILL.md",
+          "disposition": "adapted",
+          "skill": "trace-code"
+        },
+        {
+          "path": "skills/technical-writing/SKILL.md",
+          "disposition": "adapted",
+          "skill": "write-technical-docs"
+        },
+        {
+          "path": "skills/typescript-best-practices/SKILL.md",
+          "disposition": "adapted",
+          "skill": "typescript-boundaries"
+        },
+        {
+          "path": "skills/unslop/SKILL.md",
+          "disposition": "adapted",
+          "skill": "write-technical-docs"
+        },
+        {
+          "path": "skills/why/SKILL.md",
+          "disposition": "adapted",
+          "skill": "trace-code"
+        }
+      ]
+    },
+    {
+      "repo": "https://github.com/kunchenguid/no-mistakes",
+      "commit": "d3c38fb478ad59848227caaf5d39f12d93cc6953",
+      "attribution": "Kun Chen",
+      "license": "licenses/no-mistakes.txt",
+      "entries": [
+        {
+          "path": ".agents/skills/agent-tuning/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/branch-sync-and-push-safety/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/ci-monitor/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/daemon-runtime/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/documentation-guidance/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/eval-corpus/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/gate-worktree-git-safety/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/pipeline-review-and-agents/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/pr-enforcement-action/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/pr-publication-safety/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/process-lifecycle/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/release-signing/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/repository-routing-security/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/test-evidence-storage/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": ".agents/skills/testing-conventions/SKILL.md",
+          "disposition": "upstream-maintainer",
+          "note": "Specific to developing the No Mistakes tool; use in its own repo."
+        },
+        {
+          "path": "skills/no-mistakes/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "no-mistakes-delivery",
+          "note": "Delivery adapter is included; native generated skill and CLI remain upstream and version-matched."
+        }
+      ]
+    }
+  ]
+}
