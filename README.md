@@ -6,12 +6,13 @@ Mistakes links were treated as one source.
 
 ## Start here
 
-Use the [Skills CLI](https://github.com/vercel-labs/skills#usage) to preview the
-collection or select only the skills you want for an agent:
+The Skills CLI requires Node.js 22.20 or later. Run these commands from the
+project where you want to use the skills. [Skills CLI documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-add).
 
 ```sh
 npx skills add BIN0806/agent-skills --list
-npx skills add BIN0806/agent-skills
+npx skills add BIN0806/agent-skills -a codex \
+  --skill lean-change --skill review-change --skill verify-behavior
 ```
 
 Start with **lean-change**, **review-change**, and **verify-behavior**. Add
