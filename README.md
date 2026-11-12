@@ -1,8 +1,7 @@
 # Agent skills
 
-Fifteen portable skills distilled from Ponytail, pstack, and No Mistakes. Pick the
-skill for the job; each entrypoint is self-contained. The three repeated No
-Mistakes links were treated as one source.
+Fifteen portable skills distilled from Ponytail, pstack, and No Mistakes. Each
+skill has its own entrypoint and can be installed individually.
 
 ## Start here
 
@@ -15,12 +14,33 @@ npx skills add BIN0806/agent-skills -a codex \
   --skill lean-change --skill review-change --skill verify-behavior
 ```
 
-Start with **lean-change**, **review-change**, and **verify-behavior**. Add
-**no-mistakes-delivery** only for projects where you use the separate gate.
-For example: “Use lean-change to fix the reported bug, then verify-behavior to
-show the failing case passes.” In Codex, select an installed skill by name in
-the skill picker. Installing a skill from this collection adds its instructions;
-it does not install a CLI, change global rules, or start an automation.
+The first command previews the collection. The second installs the three
+starter skills under the current project's `.agents/skills/`. Run
+`npx skills list` from that project to see what is installed.
+
+Open the same project in Codex. In the CLI or IDE extension, use `/skills` or
+type `$` to mention a skill. For example, ask “Use `$lean-change` to fix the
+reported bug, then use `$verify-behavior` to show the failing case passes.”
+[OpenAI documentation on invoking skills](https://learn.chatgpt.com/docs/build-skills).
+
+### Use with Kun and Firstmate
+
+The skills are a separate project install alongside the
+[Neovim setup](https://github.com/BIN0806/nvim_settings) and
+[macOS dotfiles](https://github.com/BIN0806/dotfiles). A Codex worker sees the
+skills available in its checkout. If Firstmate creates a separate Git worktree,
+put the skills in that worktree as well, or commit the project skill files and
+lockfile when the project wants to share them across checkouts.
+
+Add the delivery adapter only in a project configured for No Mistakes:
+
+```sh
+npx skills add BIN0806/agent-skills -a codex --skill no-mistakes-delivery
+```
+
+The adapter supplies instructions for the separately installed gate. For an
+already configured Kun project, the [Firstmate guide](https://github.com/BIN0806/nvim_settings#install-or-reopen-the-kun-workflow)
+explains how to start the workflow and select the project's delivery mode.
 
 ## What to use
 
@@ -46,7 +66,7 @@ it does not install a CLI, change global rules, or start an automation.
 
 | Source | What stays upstream |
 | --- | --- |
-| No Mistakes | The [CLI, daemon, Git remote, pipeline, and native generated skill](https://github.com/kunchenguid/no-mistakes/tree/d3c38fb478ad59848227caaf5d39f12d93cc6953). The CLI can publish a branch, open a PR and watch CI; local verification alone does not require it. The adapter here works alongside Billy’s [Kun/Firstmate setup](https://github.com/BIN0806/nvim_settings#install-or-reopen-the-kun-workflow). Its 15 repository-maintainer skills are specific to developing No Mistakes and remain upstream. |
+| No Mistakes | The CLI, daemon, delivery pipeline, generated skill, and 15 skills for maintainers of No Mistakes. The CLI can publish a branch, open a PR and watch CI when the project uses gated delivery. [No Mistakes source](https://github.com/kunchenguid/no-mistakes/tree/d3c38fb478ad59848227caaf5d39f12d93cc6953). |
 | Ponytail | [Harness plugins, activation hooks, the status band, and benchmark tooling](https://github.com/DietrichGebert/ponytail/tree/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846). Install upstream if you want persistent modes or its metrics UI. Its published benchmark is evidence for that benchmark, not an estimate for this collection. |
 | pstack, Statechart | The [TypeScript Statechart runner](https://github.com/q-qp-p/pstack/tree/a6342ded43a2437e3c664b46c2cff103787773fd/skills/statechart), TLC/Java tooling and optional Pele rendering. This collection keeps the modeling and counterexample workflow as a skill. |
 | pstack, Benny and bot UI | [Benny](https://github.com/q-qp-p/pstack/tree/a6342ded43a2437e3c664b46c2cff103787773fd/automations/benny) needs Cursor Automations, Slack, tracker and app-control setup. [Bot UI](https://github.com/q-qp-p/pstack/tree/a6342ded43a2437e3c664b46c2cff103787773fd/skills/make-bot-ui) needs its own routine/webhook and hosting configuration. The local bug-triage skill needs none of those. |
