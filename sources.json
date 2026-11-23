@@ -479,6 +479,30 @@
           "note": "Delivery adapter is included; native generated skill and CLI remain upstream and version-matched."
         }
       ]
+    },
+    {
+      "repo": "https://github.com/kunchenguid/vision",
+      "commit": "acf4d656188e55ce9633774e4d0c848e9ae49a02",
+      "attribution": "Kun Chen",
+      "license": "skills/vision/LICENSE",
+      "entries": [
+        {
+          "path": "skills/vision/SKILL.md",
+          "disposition": "adapted",
+          "skill": "vision",
+          "note": "Local hardening: pinned direct board dependency, serialized JSON and DOM text rendering, bounded file scope, author-approved migrations."
+        }
+      ]
     }
+  ],
+  "original_skills": [
+    "blast-radius",
+    "how",
+    "interrogate",
+    "interview-copilot",
+    "ponytail",
+    "systematic-debugging",
+    "unslop",
+    "verification-before-completion"
   ]
 }

@@ -1,7 +1,8 @@
 # Agent skills
 
-Fifteen portable skills distilled from Ponytail, pstack, and No Mistakes. Each
-skill has its own entrypoint and can be installed individually.
+Twenty-four portable skills: the curated engineering collection, eight interview helpers, and a locally hardened Vision workflow. Each skill can be installed individually.
+
+Open [SKILLS.md](SKILLS.md) for the aggregate index, example prompts, common sequences, and separately installed companion skills.
 
 ## Start here
 
@@ -62,6 +63,19 @@ explains how to start the workflow and select the project's delivery mode.
 | [triage-issue](skills/triage-issue/SKILL.md) | Triage supplied evidence, reproduce a bug locally, and check whether a fix already exists. |
 | [no-mistakes-delivery](skills/no-mistakes-delivery/SKILL.md) | Inspect or drive an authorized No Mistakes gate using its installed version and project context. |
 
+## Interview template and Vision
+
+For the eight interview helpers and Vision, see the [quick reference](SKILLS.md).
+The optional [interview workflow](workflows/interview-AGENTS.md) provides routing rules.
+To copy all catalog skills and append those rules to a target repository:
+
+```sh
+./install.sh /path/to/repo
+```
+
+The installer preserves existing rules, skips identical skills, and stops on conflicts.
+Vision is adapted from [kunchenguid/vision](https://github.com/kunchenguid/vision/tree/acf4d656188e55ce9633774e4d0c848e9ae49a02), with its MIT license retained. It uses serialized board data, text rendering, a pinned direct board dependency, and approval before migration removals. See the [validation record](docs/security-review.md).
+
 ## Tools and workflows kept separate
 
 | Source | What stays upstream |
@@ -79,5 +93,5 @@ explains how to start the workflow and select the project's delivery mode.
 - [Kun Chen / No Mistakes](https://github.com/kunchenguid/no-mistakes/tree/d3c38fb478ad59848227caaf5d39f12d93cc6953) — review-gated delivery and branch custody guidance. [MIT notice](licenses/no-mistakes.txt).
 
 [Source map](sources.json) records the pinned commits and the disposition of
-each of the 89 source skill entrypoints, including duplicate harness copies
+the upstream source skill entrypoints, including duplicate harness copies
 and upstream-only maintainer and automation skills.
