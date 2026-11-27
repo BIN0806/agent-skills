@@ -1,6 +1,6 @@
 # Skills quick reference
 
-Use this page to choose a skill, open its instructions, and copy an invocation. The catalog contains 24 skills; each link below opens its complete entrypoint.
+Use this page to choose a skill, open its instructions, and copy an invocation. The catalog contains 34 skills, including Matt Pocock's adapted workflows. Each link below opens its complete entrypoint.
 
 ## Find and invoke a skill
 
@@ -18,6 +18,11 @@ Use this page to choose a skill, open its instructions, and copy an invocation. 
 | [review-change](skills/review-change/SKILL.md) · Review | Find concrete regressions and blast radius. | `$review-change Review the current diff.` |
 | [shortcut-ledger](skills/shortcut-ledger/SKILL.md) · Review | Inspect deliberate shortcuts and upgrade triggers. | `$shortcut-ledger Inventory shortcuts in this repo.` |
 | [design-change](skills/design-change/SKILL.md) · Planning | Choose boundaries and sequence a migration. | `$design-change Plan this API migration.` |
+| [clarify-requirements](skills/clarify-requirements/SKILL.md) · Planning | Resolve design choices through questions or draft a stakeholder questionnaire. | `$clarify-requirements Stress-test this feature idea.` |
+| [plan-delivery](skills/plan-delivery/SKILL.md) · Planning | Write a spec, dependency-aware tickets or a decision map. | `$plan-delivery Turn our agreed feature into small verifiable tickets.` |
+| [model-domain](skills/model-domain/SKILL.md) · Planning | Clarify domain terms and record consequential decisions. | `$model-domain Resolve the different meanings of account in this project.` |
+| [research-topic](skills/research-topic/SKILL.md) · Research | Investigate a question using primary sources. | `$research-topic Check which API behavior this version supports and cite the source.` |
+| [prototype-design](skills/prototype-design/SKILL.md) · Design | Answer one UI or logic question with a runnable demo. | `$prototype-design Let me compare these two state models interactively.` |
 | [vision](skills/vision/SKILL.md) · Planning | Draft and stress-test project direction from history. | `$vision Create and stress-test this project’s vision.` |
 | [interview-copilot](skills/interview-copilot/SKILL.md) · Interview | Start with approach, complexity, invariant, and edge cases. | `$interview-copilot Plan this problem; code only when requested.` |
 | [interrogate](skills/interrogate/SKILL.md) · Interview | Resolve decision-changing prompt ambiguities. | `$interrogate Find missing constraints in this prompt.` |
@@ -25,6 +30,7 @@ Use this page to choose a skill, open its instructions, and copy an invocation. 
 | [how](skills/how/SKILL.md) · Explore | Trace an unfamiliar multi-file flow. | `$how Explain this request path before changing it.` |
 | [blast-radius](skills/blast-radius/SKILL.md) · Explore | Find callers and state affected by a structural edit. | `$blast-radius What would this signature change affect?` |
 | [systematic-debugging](skills/systematic-debugging/SKILL.md) · Debug | Reproduce a wrong answer or timeout and fix its cause. | `$systematic-debugging Diagnose this failing test.` |
+| [diagnose-bug](skills/diagnose-bug/SKILL.md) · Debug | Investigate a hard application bug with a reproducible feedback loop. | `$diagnose-bug Find why this request intermittently saves twice.` |
 | [unslop](skills/unslop/SKILL.md) · Polish | Remove redundant code narration and wrappers. | `$unslop Polish this diff while preserving behavior.` |
 | [verification-before-completion](skills/verification-before-completion/SKILL.md) · Verify | Check relevant tests and edge cases before claiming success. | `$verification-before-completion Verify this implementation.` |
 | [trace-code](skills/trace-code/SKILL.md) · Explore | Explain behavior and history from repository evidence. | `$trace-code Explain how this code path works.` |
@@ -38,6 +44,10 @@ Use this page to choose a skill, open its instructions, and copy an invocation. 
 | [parallel-work](skills/parallel-work/SKILL.md) · Coordination | Plan independent workers when delegation is authorized. | `$parallel-work Propose independent subtasks; wait for delegation approval.` |
 | [triage-issue](skills/triage-issue/SKILL.md) · Debug | Reproduce and classify a supplied bug report. | `$triage-issue Investigate this bug report locally.` |
 | [no-mistakes-delivery](skills/no-mistakes-delivery/SKILL.md) · Delivery | Use a separately installed, configured No Mistakes gate. | `$no-mistakes-delivery Inspect the current gate and report the next action.` |
+| [prepare-pr](skills/prepare-pr/SKILL.md) · Delivery | Explain a diff with behavior evidence and rollout risks. | `$prepare-pr Draft the PR description for this branch.` |
+| [configure-project-checks](skills/configure-project-checks/SKILL.md) · Workflow | Repair or add requested hooks and project checks. | `$configure-project-checks Wire our existing formatter into a pre-commit hook.` |
+| [teach-topic](skills/teach-topic/SKILL.md) · Learning | Teach through practical exercises, feedback and retrieval. | `$teach-topic Help me practice Vim motions using this course.` |
+| [scaffold-exercises](skills/scaffold-exercises/SKILL.md) · Learning | Create exercises, solutions and explanations in a course's existing layout. | `$scaffold-exercises Add a practice exercise for macros.` |
 
 ## Common sequences
 
@@ -45,8 +55,11 @@ Use this page to choose a skill, open its instructions, and copy an invocation. 
 | --- | --- |
 | Interview practice | `interview-copilot` → `interrogate` → `ponytail` → `verification-before-completion` |
 | Existing repository change | `trace-code` → `design-change` when needed → `lean-change` → `review-change` → `verify-behavior` |
+| Idea to implementation | `clarify-requirements` → `plan-delivery` when needed → `lean-change` → `verify-behavior` → `review-change` → `prepare-pr` |
 | Project direction | `vision`, then apply the approved vision during later design work |
 | Wrong answer or timeout | `systematic-debugging` → `verify-behavior` |
+| Difficult application bug | `diagnose-bug` → `verify-behavior` → `review-change` |
+| Create learning material | `teach-topic` for the learning goal, then `scaffold-exercises` when exercises are requested |
 | Ready to deliver | `review-change` → `verify-behavior` → `no-mistakes-delivery` in a configured gate project |
 
 ## Global companion skills
@@ -66,8 +79,12 @@ Use the short alias `tutor` or `socratic-tutor` for a teaching session. Use `sav
 
 - `ponytail` is the compact interview helper in this catalog; `lean-change` is the broader implementation skill.
 - `how` is the compact interview walkthrough; `trace-code` also covers historical rationale and regressions.
+- `interrogate` focuses on a problem's missing constraints. `clarify-requirements` supports a broader requirements interview or stakeholder questionnaire.
+- `systematic-debugging` stays concise for interview solutions. `diagnose-bug` adds minimization, hypotheses and instrumentation for hard application failures.
+- `teach-topic` is bundled here for practical lessons and learning workspaces. The separately installed `socratic-tutor` adds its own structured tutoring workflow.
 - `no-mistakes-delivery` is a portable adapter. The full `no-mistakes` CLI is a separate tool and may publish branches or PRs when authorized.
 - Vision’s direct board runtime is pinned at `lavish-axi@0.1.98`; its transitive dependencies are not audited by this catalog. See the [security review](docs/security-review.md).
+- Matt's original skill names, tracker setup and beta workflows are mapped to their curated counterparts or upstream status in [sources.json](sources.json). See the [workflow guide](README.md#matt-pocock-workflows).
 
 ## Give another agent context
 

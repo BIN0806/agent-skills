@@ -493,6 +493,237 @@
           "note": "Local hardening: pinned direct board dependency, serialized JSON and DOM text rendering, bounded file scope, author-approved migrations."
         }
       ]
+    },
+    {
+      "repo": "https://github.com/mattpocock/skills",
+      "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+      "attribution": "Matt Pocock / mattpocock",
+      "license": "licenses/mattpocock.txt",
+      "entries": [
+        {
+          "path": "skills/engineering/ask-matt/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "The upstream router names original slash commands. The collection README routes users through the curated names."
+        },
+        {
+          "path": "skills/engineering/code-review/SKILL.md",
+          "disposition": "adapted",
+          "skill": "review-change",
+          "note": "Review project standards and specification agreement distinctly, with a pinned review scope."
+        },
+        {
+          "path": "skills/engineering/codebase-design/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change",
+          "note": "Retain interface depth, caller burden, dependency-aware testing and alternative designs. Preserve coverage before deleting old tests."
+        },
+        {
+          "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+          "disposition": "adapted",
+          "skill": "diagnose-bug",
+          "note": "Retain reproduction, minimization, hypotheses, probes and original-scenario verification. The human-input shell script stays upstream."
+        },
+        {
+          "path": "skills/engineering/domain-modeling/SKILL.md",
+          "disposition": "adapted",
+          "skill": "model-domain",
+          "note": "Resolve domain terms through scenarios and keep useful glossary and decision records."
+        },
+        {
+          "path": "skills/engineering/grill-with-docs/SKILL.md",
+          "disposition": "adapted",
+          "skill": "clarify-requirements",
+          "note": "Combine interview wrappers with project-aware decision capture."
+        },
+        {
+          "path": "skills/engineering/implement-spec/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "parallel-work",
+          "note": "Retain the dependency graph, ready work and integration checks when delegation is authorized. The original orchestration and tracker close-out stay upstream."
+        },
+        {
+          "path": "skills/engineering/implement/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "verify-behavior",
+          "note": "Retain small verified implementation slices alongside lean-change and review-change, following project commit rules."
+        },
+        {
+          "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+          "disposition": "adapted",
+          "skill": "design-change",
+          "note": "Survey real friction and recent changes, assess interfaces and testing, and compare evidenced alternatives. Match presentation to the deliverable."
+        },
+        {
+          "path": "skills/engineering/pr/SKILL.md",
+          "disposition": "adapted",
+          "skill": "prepare-pr",
+          "note": "Retain behavior-focused descriptions, explanatory visuals, evidence and rollout risks. Upstream credits Dex Horthy / Humanlayer for visual guidance."
+        },
+        {
+          "path": "skills/engineering/prototype/SKILL.md",
+          "disposition": "adapted",
+          "skill": "prototype-design",
+          "note": "Retain the design question, UI or logic choice, runnable artifact and decision evidence. Preserve and publish according to the requested scope."
+        },
+        {
+          "path": "skills/engineering/research/SKILL.md",
+          "disposition": "adapted",
+          "skill": "research-topic",
+          "note": "Use primary sources and cited findings, researching directly unless delegation is authorized and useful."
+        },
+        {
+          "path": "skills/engineering/retro/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow",
+          "note": "Assess friction, existing checks, navigation, instructions and evidence. Prefer deterministic checks for mechanical errors."
+        },
+        {
+          "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "plan-delivery",
+          "note": "Reuse actual planning and tracker conventions. The upstream tracker, label and glossary setup stays upstream and is unnecessary for curated skills."
+        },
+        {
+          "path": "skills/engineering/tdd/SKILL.md",
+          "disposition": "adapted",
+          "skill": "verify-behavior",
+          "note": "Retain behavioral interfaces, independent expected results and one red-green slice at a time. Reuse agreed requirements without mandatory per-test approval."
+        },
+        {
+          "path": "skills/engineering/to-spec/SKILL.md",
+          "disposition": "adapted",
+          "skill": "plan-delivery",
+          "note": "Synthesize resolved context into a spec with acceptance evidence and exclusions. Publishing follows the requested scope."
+        },
+        {
+          "path": "skills/engineering/to-tickets/SKILL.md",
+          "disposition": "adapted",
+          "skill": "plan-delivery",
+          "note": "Keep complete demonstrable slices, actual blockers, and expand/migrate/contract for wide refactors."
+        },
+        {
+          "path": "skills/engineering/triage/SKILL.md",
+          "disposition": "adapted",
+          "skill": "triage-issue",
+          "note": "Include feature requests and incoming PR evidence, applying existing tracker states only when tracker management is requested."
+        },
+        {
+          "path": "skills/engineering/wayfinder/SKILL.md",
+          "disposition": "adapted",
+          "skill": "plan-delivery",
+          "note": "Keep a decision map, linked evidence and prerequisite-based progression without a fixed session quota or automatic tracker mutation."
+        },
+        {
+          "path": "skills/engineering/wizard/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Interactive Bash wizard captures secrets and writes environment files or GitHub secrets. It needs its original template and a separately reviewed setup task."
+        },
+        {
+          "path": "skills/in-progress/chief-of-staff/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental universal delegation and durable wiki workflow; task-handoff and parallel-work cover the portable subset."
+        },
+        {
+          "path": "skills/in-progress/claude-handoff/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental Claude background launch; task-handoff covers the portable summary without starting an agent."
+        },
+        {
+          "path": "skills/in-progress/loop-me/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental stateful recurring-workflow design with its own persistent workspace."
+        },
+        {
+          "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental dependency-cruiser configuration, layout rules and example package. Keep the installer and config together upstream."
+        },
+        {
+          "path": "skills/in-progress/software-factory/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental remote automation architecture and service surveys, separate from installing instruction skills or using Firstmate."
+        },
+        {
+          "path": "skills/in-progress/writing-beats/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental incremental article writing. Ordinary technical prose uses write-technical-docs."
+        },
+        {
+          "path": "skills/in-progress/writing-fragments/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental writing-material collection with a persistent article process."
+        },
+        {
+          "path": "skills/in-progress/writing-shape/SKILL.md",
+          "disposition": "upstream-experimental",
+          "note": "Experimental paragraph-by-paragraph writing process. Ordinary technical prose uses write-technical-docs."
+        },
+        {
+          "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+          "disposition": "upstream-only",
+          "note": "Claude Code PreToolUse shell hook changes tool permissions and blocks all pushes. Keep separate from Codex and No Mistakes."
+        },
+        {
+          "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+          "disposition": "adapted-partial",
+          "skill": "typescript-boundaries",
+          "note": "Retain fixture guidance and distinguish assertions from runtime validation. The optional Shoehorn package and migration recipe stay upstream."
+        },
+        {
+          "path": "skills/misc/scaffold-exercises/SKILL.md",
+          "disposition": "adapted",
+          "skill": "scaffold-exercises",
+          "note": "Keep problems, solutions and explainers with the actual course layout and checks. No assumed AI Hero linter or automatic commit."
+        },
+        {
+          "path": "skills/misc/setup-pre-commit/SKILL.md",
+          "disposition": "adapted",
+          "skill": "configure-project-checks",
+          "note": "Keep package-manager detection, staged formatting, merged hooks and real validation, reusing the project toolchain."
+        },
+        {
+          "path": "skills/productivity/grill-me/SKILL.md",
+          "disposition": "adapted",
+          "skill": "clarify-requirements",
+          "note": "Consolidate stateless interviews with requirements discovery."
+        },
+        {
+          "path": "skills/productivity/grilling/SKILL.md",
+          "disposition": "adapted",
+          "skill": "clarify-requirements",
+          "note": "Retain prerequisite-aware rounds, recommendations and fact lookup, with question volume proportional to the task."
+        },
+        {
+          "path": "skills/productivity/handoff/SKILL.md",
+          "disposition": "adapted",
+          "skill": "task-handoff",
+          "note": "Tailor a portable summary and link authoritative artifacts while excluding secrets."
+        },
+        {
+          "path": "skills/productivity/teach/SKILL.md",
+          "disposition": "adapted",
+          "skill": "teach-topic",
+          "note": "Keep practical goals, diagnostic placement, feedback, retrieval, optional progress records and an existing learning workspace."
+        },
+        {
+          "path": "skills/productivity/to-questionnaire/SKILL.md",
+          "disposition": "adapted",
+          "skill": "clarify-requirements",
+          "note": "Draft questions around the recipient knowledge gap and decisions the user needs."
+        },
+        {
+          "path": "skills/productivity/wait-what/SKILL.md",
+          "disposition": "adapted",
+          "skill": "write-technical-docs",
+          "note": "The existing restatement workflow retains context, plain language and uncertainty."
+        },
+        {
+          "path": "skills/productivity/writing-for-agents/SKILL.md",
+          "disposition": "adapted",
+          "skill": "improve-workflow",
+          "note": "Use conditional context pointers, progressive disclosure, checkable completion and authoritative concise instructions."
+        }
+      ]
     }
   ],
   "original_skills": [
